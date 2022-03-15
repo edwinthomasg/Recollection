@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping selector</title>
+    <style>
+        p,h3{
+            color:darkgreen  /*grouping*/
+        }
+        p span{
+            color:violet; /*descendent - elements inside p tag*/
+        }
+        p>span{
+            color:red; /*child - elements direct child of p tag*/
+        }
+        p~span{
+            color:rgb(255, 0, 179); /*sibling - elements followed by p tag not inside it*/
+        }
+        p+span{
+            color:rgb(137, 238, 5) /*adjacent sibling - immediate element followed by p tag not inside it*/
+        }
+    </style>
+</head>
+<body>
+    <span>Top span content</span>
+    <p>
+       Para content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, iusto. <br>
+       <span>inner span content - 1</span> <br>
+       <span>inner span content - 2</span>
+       <br>
+       <h5><span>span content inside h1</span></h5>
+    </p>
+    <span>Immediate span content</span>
+    <h3>Content with h3 size</h3>
+    <span>Next span content</span>
+    <table border="1" style="padding: 5px;">
+        <tr>
+            <th>Name</th>
+            <th>Mail</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Edwin</td><td>e@mail</td><td>21</td>
+        </tr>
+        <tr>
+            <td>Edwin</td><td>e@mail</td><td>21</td>
+        </tr>
+        <tr>
+            <td>Edwin</td><td>e@mail</td><td>21</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

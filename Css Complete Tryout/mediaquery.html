@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        p{
+            background-color: yellow;
+            color: blue;
+        }
+       
+        @media(max-width:500px){
+            p{background-color:red;}
+        }
+        .box p{
+            background-color: black;
+            color: red;
+        }
+        @media screen and (max-width:500px){
+            .box p{
+                background-color: blue;
+                color: white;
+                /* display: none; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dicta amet magnam cumque necessitatibus deleniti nostrum fuga, ea ad illum ipsam at? Omnis impedit incidunt deserunt eum, dignissimos non modi.</p><br>
+   <div class="box">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati quod ex quia. Optio accusantium sapiente consequuntur quia deserunt obcaecati!</p>
+   </div>
+</body>
+</html>

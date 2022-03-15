@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        /* a:any-link{
+            color: blueviolet; any link
+        } */
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color:violet;
+        }
+        a:active{
+            color:blue
+        }
+        a:hover{
+            color:yellow;
+        }
+        input[type="email"]:valid{
+            /* border:3px; */
+            background-color: green;
+        }
+        input[type="email"]:invalid{
+            /* border:2px; */
+            background-color: red;
+        }
+        input[type=text]:focus{
+            background-color: black;
+        }
+        button:disabled{
+            color: brown;
+        }
+        input:placeholder-shown{
+            background-color: red;
+            
+        }
+        input:checked{
+            box-shadow: 0 0 0 3px lime;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/" target="_self">Link 1</a><br>
+    <a href="https://www.youtube.com/" target="_self">Link 2</a><br>
+    <a href="https://www.google.com/" target="_self">Link 3</a><br>
+    <a href="https://www.google.com/" target="_self">Link 4</a><br>
+    <a href="https://www.facebook.com/" target="_self">Link 4</a>
+    <br><br>
+    Email:<input type="email" name="" id="">
+    Name:<input type="text" name="" id="">
+    Feedback:<input type="text" name="" id="" placeholder="review">
+    <button disabled>SUBMIT</button>
+    <input type="checkbox" name="" id="">I agree
+</body>
+</html>

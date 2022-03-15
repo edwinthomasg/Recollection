@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        #para::first-line{
+            font-style: italic; /*applied in 1st line of para tag*/
+        }
+        #para::first-letter{
+           color: red; /*applied in 1st letter of para tag*/
+        }
+        #para::before{
+            content:"Start";
+        }
+        #para::after{
+            content:"End";
+        }
+        ul li::marker{
+            color:red;
+        }
+        input::placeholder{
+            background-color: violet;
+            color: red;
+        }
+        p::selection{
+            color: violet;
+        }
+        p::spelling-error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="para" contenteditable spellcheck="true"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas similique hic enim asperiores, in sapiente dicta vitae. Eos voluptates neque molestiae eius incidunt, nemo corrupti dolor quisquam earum optio iusto voluptatem consectetur excepturi facilis ipsa obcaecati deleniti cupiditate totam fuga fugiat suscipit. Vitae dicta nemo aspernatur sapiente, tempora, placeat corporis quasi ea labore quis fuga quaerat officiis hic explicabo laboriosam itaque facere tempore ducimus eos animi natus architecto suscipit maiores. Dignissimos obcaecati quod explicabo odio veritatis, non accusantium adipisci laborum placeat quia magni suscipit natus omnis excepturi nostrum tempora ratione veniam modi error mollitia soluta dicta. Reiciendis veritatis quisquam delectus.
+    </p><br>
+    <ul>
+        <li>c</li>
+        <li>java</li>
+        <li>python</li>
+    </ul><br>
+    <input type="text" name="" id="" placeholder="type here">
+    
+</body>
+</html>

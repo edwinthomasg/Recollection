@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        div{
+            background-color: red;
+            width: 150px;
+            height:150px;
+           
+        }
+        .box1:hover{
+            transition: 2s;
+            transform: translateX(500px);
+        }
+        .box2:hover{
+            transition: 2s;
+            transform: translateY(-500px);
+        }
+        .box3:hover{
+            transition: 2s;
+            transform: rotateY(70deg);
+        }
+        .box4:hover{
+            transition: 2s;
+            transform: rotateX(70deg);
+        }
+        .box5:hover{
+            transition: 2s;
+            transform: skew(10deg);
+        }
+        .box6:hover{
+            transition: 2s;
+            transform: scale(5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div><br>
+    <div class="box2">
+    </div><br>
+    <div class="box3">
+    </div><br>
+    <div class="box4">
+    </div><br>
+    <div class="box4">
+    </div><br>
+    <div class="box5">
+    </div><br>
+    <div class="box6">
+    </div>
+</body>
+</html>
